@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Work Task</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row text-center mt-3">
+            <div class="row">
+            <div class="col-12">
+                <h3 class="text-primary mt-3">Calculate Your Rewards</h3>
+            </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-8 mt-5">
+                    <div class="mb-3 row">
+                        <label for="vendor_bills" class="col-sm-4 col-form-label fw-bold custom-primary">Vendors/Bills</label>
+                        <div class="col-sm-8">
+                          <input type="number" class="form-control" id="vendor_bills" min="0" step="any">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="media_ad" class="col-sm-4 col-form-label fw-bold custom-primary">Media/Ad Spend</label>
+                        <div class="col-sm-8">
+                          <input type="number" class="form-control" id="media_ad">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="corp_spend" class="col-sm-4 col-form-label fw-bold custom-primary">Corp.Spend</label>
+                        <div class="col-sm-8">
+                          <input type="number" class="form-control" id="corp_spend">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="team_project" class="col-sm-4 col-form-label fw-bold custom-primary">Team Project</label>
+                        <div class="col-sm-8">
+                          <input type="number" class="form-control" id="teamProject">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="text-primary mt-3">Compare Your Rewards</h3>
+                </div>
+                 <div class="row justify-content-center">
+                     <div class="col-8 mt-3">
+                     <button class="btn btn-light border border-2 m-1 shadow-lg px-4" onclick="getBrandPercentage('brex')">Brex</button>
+                     <button class="btn btn-light border border-2 m-1 shadow-lg px-4" onclick="getBrandPercentage('stripe')">Stripe</button>
+                     <button class="btn btn-light border border-2 m-1 shadow-lg px-4" onclick="getBrandPercentage('amex')">Amex</button>
+                     </div>
+                 </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-8 text-center">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="img/card.jpg" width="200" class="rounded shadow-lg border border-2">
+                    </div>
+                    <div class="col-8 pt-3">
+                        <p class="custom-text-input1 rounded"></p>
+                        <p class="custom-text-input1 rounded"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <h5 class="mt-3">Compare Your Rewards</h5>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8 mt-3">
+                <img src="img/brex.jpg" width="200" class="m-2 rounded border border-3">
+                <img src="img/stripe.png" width="200" class="m-2 rounded border border-3">
+                <img src="img/amex33.png" width="200" class="m-2 rounded border border-3">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8 m-3">
+                <div class="row" id="brand"></div>
+                <div class="row mb-2" id="ulimited_rewards"></div>
+                <div class="row" id="lifetime_rewards"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

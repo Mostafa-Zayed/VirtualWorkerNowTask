@@ -1,0 +1,21 @@
+.custom-primary{
+    color:#697daa !important;
+}
+.custom-text-input1,.custom-text-input2,.custom-text-input3{
+    padding:0px;
+    outline:none;
+    border:0px;
+    height: 20px;
+}
+.custom-text-input1{
+    background-color:#8bd5f2;
+}
+.custom-text-input2{
+    background-color: #bcd0dd;
+}
+.custom-text-input2,.custom-text-input3{
+    height: 12px;
+}
+.custom-text-input3{
+    background-color: #1384ed;
+}
